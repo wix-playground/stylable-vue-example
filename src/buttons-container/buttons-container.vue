@@ -1,11 +1,10 @@
 <template>
-    <div
-        v-bind="style.$cssStates({ selected })" 
-        :class="style.root" >
+    <div v-bind="style.$cssStates({ selected })":class="style.root" >
         <p :class="style.description">
             Three styled buttons, using the same base component.
             Click any of them to cause a change of state.
         </p>
+
         <div :class="style.buttonBox">
             <CustomizableButton 
                 @click.native="$emit('select-button', 'one')"

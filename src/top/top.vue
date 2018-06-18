@@ -1,8 +1,8 @@
 <template>
-    <header v-bind:class="style.root" >
-        <img v-bind:src="vueLogo" v-bind:class="style.vueLogo" alt="React logo" />
-        <img v-bind:src="stylableLogo" v-bind:class="style.stylableLogo" alt="Stylable logo" />
-        <h1 v-bind:class="style.title" >
+    <header :class="style.root" >
+        <img :src="vueLogo" :class="style.vueLogo" alt="React logo" />
+        <img :src="stylableLogo" :class="style.stylableLogo" alt="Stylable logo" />
+        <h1 :class="style.title" >
             Welcome to Vue with Stylable
         </h1>
     </header>
