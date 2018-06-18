@@ -1,10 +1,10 @@
 # Stylable + Vue Example
 
-A basic example of using Stylable and Vue together. 
-This project uses a very simple manual webpack integration with the `vue-template-compiler`.
+A basic example of using [Stylable](https://stylable.io) and [Vue](https://vuejs.org/) together. 
+This project uses a very simple manual webpack integration with the `vue-template-compiler`, and `webpack-dev-server` to run the example.
 
 > Note: current version of the Vue quick start boilerplate uses webpack 3, and does not integrate with Stylable.
-> Once the ecosystem moves to webpack `4.x`, we can consider a more encompassing integration specifically for view.
+> Once the ecosystem moves to webpack `4.x`, we can consider a more encompassing integration specifically for Vue.
 
 ## Installing
 1. Clone this repo
@@ -22,6 +22,6 @@ These are then customized externally from the root component, `app` (see `app.st
 
 ## Stylable Intelligence
 
-If you're using VS Code as your IDE, we strongly recommend installing our [stylable-intelligence](https://marketplace.visualstudio.com/items?itemName=wix.stylable-intelligence) extension.
+If you're using [VS Code](https://code.visualstudio.com/) as your IDE, we strongly recommend installing our [stylable-intelligence](https://marketplace.visualstudio.com/items?itemName=wix.stylable-intelligence) extension.
 
 It provides a typed CSS experience including auto completions, hinting, diagnostics and more.
