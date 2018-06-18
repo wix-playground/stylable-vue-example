@@ -78,16 +78,19 @@
 
 /* CUSTOM STATE - SELECTED */
 
-.buttonsContainer:selected(one)::firstButton::label::before,
-.buttonsContainer:selected(two)::secondButton::label::before,
-.buttonsContainer:selected(three)::thirdButton::label::before {
+.buttonsContainer:selected(layeredButton)::layeredButton::label::before,
+.buttonsContainer:selected(noteButton)::noteButton::label::before,
+.buttonsContainer:selected(gradientButton)::gradientButton::label::before,
+.buttonsContainer:selected(layeredButton)::layeredButton::label::after,
+.buttonsContainer:selected(noteButton)::noteButton::label::after,
+.buttonsContainer:selected(gradientButton)::gradientButton::label::after {
     content: "😎";
     font-size: 1.5rem;
 }
 
 /* DEFAULT BUTTON LOOKS */
 
-.buttonsContainer::firstButton {
+.buttonsContainer::layeredButton {
     -st-mixin: lightFont, buttonLayout;
     background: linear-gradient(to right, #3F5EFB, #FC466B);
     border-radius: 100px;
@@ -95,15 +98,15 @@
 }
 
 
-.buttonsContainer::firstButton:hover {
+.buttonsContainer::layeredButton:hover {
     box-shadow: .5rem .5rem .5rem value(blackish), -.5rem -.5rem value(redish);
 }
 
-.buttonsContainer::firstButton::label {
+.buttonsContainer::layeredButton::label {
     -st-mixin: lightFont;
 }
 
-.buttonsContainer::secondButton {
+.buttonsContainer::noteButton {
     -st-mixin: buttonLayout;
     border: 2px solid value(blackish);
     transition: all 125ms ease-in-out;
@@ -112,14 +115,14 @@
     left: -10px;
 }
 
-.buttonsContainer::secondButton:hover {
+.buttonsContainer::noteButton:hover {
     border: 4px double value(blackish);
     box-shadow: 0 0 1rem value(blackish);
     background-color: value(greenish);
     transform: rotate(-2deg);
 }
 
-.buttonsContainer::secondButton::label {
+.buttonsContainer::noteButton::label {
     -st-mixin: lightFont;
     display: block;
     position: relative;
@@ -131,13 +134,13 @@
     transition: all 125ms ease-in-out;
 }
 
-.buttonsContainer::secondButton:hover::label {
+.buttonsContainer::noteButton:hover::label {
     border: 4px double value(blackish);
     box-shadow: 0 0 1rem value(blackish);
     transform: rotate(4deg);
 }
 
-.buttonsContainer::thirdButton {
+.buttonsContainer::gradientButton {
     -st-mixin: buttonLayout;
     border-radius: 12px;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -146,9 +149,8 @@
     color: white;
 }
 
-.buttonsContainer::thirdButton::label {
+.buttonsContainer::gradientButton::label {
     -st-mixin: lightFont;
-
 }
 
 @keyframes Gradient {

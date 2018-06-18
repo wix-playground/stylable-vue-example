@@ -7,17 +7,17 @@
 
         <div :class="style.buttonBox">
             <CustomizableButton 
-                @click.native="$emit('select-button', 'one')"
-                :class="style.firstButton"
-                label="one" />
+                @click.native="$emit('select-button', 'layeredButton')"
+                :class="style.layeredButton"
+                label="WE" />
             <CustomizableButton
-                @click.native="$emit('select-button', 'two')"
-                :class="style.secondButton"
-                label="two" />
+                @click.native="$emit('select-button', 'noteButton')"
+                :class="style.noteButton"
+                label="ARE" />
             <CustomizableButton
-                @click.native="$emit('select-button', 'three')"
-                :class="style.thirdButton"
-                label="three" />
+                @click.native="$emit('select-button', 'gradientButton')"
+                :class="style.gradientButton"
+                label="BUTTONS" />
         </div>
     </div>
 </template>

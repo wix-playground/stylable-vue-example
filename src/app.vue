@@ -17,7 +17,7 @@ import ButtonsContainer from "./buttons-container/buttons-container.vue";
 export default {
     name: "app",
     components: { Top, ButtonsContainer },
-    data: () => { return { style, selected: 'one' }; },
+    data: () => { return { style, selected: 'noteButton' }; },
     methods: {
         selectButton(button) {
             this.selected = button;
