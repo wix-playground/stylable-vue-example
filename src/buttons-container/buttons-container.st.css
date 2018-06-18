@@ -1,0 +1,25 @@
+:import {
+    -st-from: "../customizable-button/customizable-button.st.css";
+    -st-default: CustomizableButton;
+}
+
+.root {
+    -st-states: selected(enum(one, two, three));
+    font-size: large;
+}
+
+.description {}
+
+.buttonBox {}
+
+.firstButton {
+    -st-extends: CustomizableButton;
+}
+
+.secondButton {
+    -st-extends: CustomizableButton;
+}
+
+.thirdButton {
+    -st-extends: CustomizableButton;
+}

@@ -1,0 +1,164 @@
+:global(body) {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:import {
+    -st-from: "./top/top.st.css";
+    -st-default: Top;
+}
+
+:import {
+    -st-from: "./buttons-container/buttons-container.st.css";
+    -st-default: ButtonsContainer;
+}
+
+:import {
+    -st-from: "./customizable-button/customizable-button.st.css";
+    -st-default: CustomizableButton;
+}
+
+:import {
+    -st-from: "./utils.st.css";
+    -st-named: lightFont, buttonLayout;
+}
+
+:vars {
+    blackish: rgba(0, 0, 0, 0.5);
+    redish: rgba(255, 0, 0, 0.5);
+    greenish: rgba(54, 243, 32, 0.5);
+}
+
+.root {
+    text-align: center;
+}
+
+/* ### TOP ### */
+
+.top {
+    -st-extends: Top;
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.top::stylableLogo {
+    width: 55px;
+}
+
+.top::stylableLogo,
+.top::vueLogo {
+    height: 80px;
+}
+
+.top::title {
+    font-size: 1.5em;
+}
+
+/* ### BUTTONS CONTAINER ### */
+
+.buttonsContainer {
+    -st-extends: ButtonsContainer;
+    position: relative
+}
+
+.buttonsContainer::description {
+    max-width: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 2rem;
+    padding: 0 3rem;
+    margin: 2rem auto;
+}
+
+.buttonsContainer::buttonBox {}
+
+/* ### BUTTONS ### */
+
+/* CUSTOM STATE - SELECTED */
+
+.buttonsContainer:selected(one)::firstButton::label::before,
+.buttonsContainer:selected(two)::secondButton::label::before,
+.buttonsContainer:selected(three)::thirdButton::label::before {
+    content: "😎";
+    font-size: 1.5rem;
+}
+
+/* DEFAULT BUTTON LOOKS */
+
+.buttonsContainer::firstButton {
+    -st-mixin: lightFont, buttonLayout;
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    border-radius: 100px;
+    transition: all 150ms ease-in;
+}
+
+
+.buttonsContainer::firstButton:hover {
+    box-shadow: .5rem .5rem .5rem value(blackish), -.5rem -.5rem value(redish);
+}
+
+.buttonsContainer::firstButton::label {
+    -st-mixin: lightFont;
+}
+
+.buttonsContainer::secondButton {
+    -st-mixin: buttonLayout;
+    border: 2px solid value(blackish);
+    transition: all 125ms ease-in-out;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+
+.buttonsContainer::secondButton:hover {
+    border: 4px double value(blackish);
+    box-shadow: 0 0 1rem value(blackish);
+    background-color: value(greenish);
+    transform: rotate(-2deg);
+}
+
+.buttonsContainer::secondButton::label {
+    -st-mixin: lightFont;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    border: 2px solid black;
+    color: black;
+    background: white;
+    transition: all 125ms ease-in-out;
+}
+
+.buttonsContainer::secondButton:hover::label {
+    border: 4px double value(blackish);
+    box-shadow: 0 0 1rem value(blackish);
+    transform: rotate(4deg);
+}
+
+.buttonsContainer::thirdButton {
+    -st-mixin: buttonLayout;
+    border-radius: 12px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 5s ease infinite;
+    color: white;
+}
+
+.buttonsContainer::thirdButton::label {
+    -st-mixin: lightFont;
+
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}

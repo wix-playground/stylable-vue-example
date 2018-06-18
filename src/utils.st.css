@@ -1,0 +1,12 @@
+.lightFont {
+    font-weight: 100;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+.buttonLayout {
+    display: block;
+    width: 250px;
+    height: 4rem;
+    margin: 3rem auto;
+}

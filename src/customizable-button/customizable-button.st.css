@@ -1,0 +1,11 @@
+
+.root {
+    cursor: pointer;
+}
+
+.root:focus {
+    user-select: text;
+    outline: none;
+}
+
+.label {}
