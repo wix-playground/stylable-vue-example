@@ -3,6 +3,8 @@
 A basic example of using [Stylable](https://stylable.io) and [Vue](https://vuejs.org/) together. 
 This project uses a simple manual webpack integration with `vue-template-compiler`, `stylable-webpack-plugin`. It then uses `webpack-dev-server` to run the example.
 
+You can see the example running in production mode [here](https://wix-playground.github.io/stylable-vue-example/).
+
 > Note: current version of the `Vue CLI` boilerplate uses webpack `3.x`, and does not integrate with Stylable.
 > Once the ecosystem moves to webpack `4.x`, we can consider a more encompassing integration specifically for Vue.
 
