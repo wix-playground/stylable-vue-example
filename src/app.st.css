@@ -79,10 +79,10 @@
 /* CUSTOM STATE - SELECTED */
 
 .buttonsContainer::layeredButton:selected::label::before,
-.buttonsContainer::noteButton:selected::label::before,
-.buttonsContainer::gradientButton:selected::label::before,
 .buttonsContainer::layeredButton:selected::label::after,
+.buttonsContainer::noteButton:selected::label::before,
 .buttonsContainer::noteButton:selected::label::after,
+.buttonsContainer::gradientButton:selected::label::before,
 .buttonsContainer::gradientButton:selected::label::after {
     content: "😎";
     font-size: 1.5rem;
