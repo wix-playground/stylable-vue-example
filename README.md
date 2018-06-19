@@ -12,7 +12,7 @@ This project uses a very simple manual webpack integration with the `vue-templat
 
 ## Running
 1. `yarn start`
-2. open `http://localhost:8080/main` in your browser
+2. open http://localhost:8080/main in your browser
 
 ## Project Structure
 
