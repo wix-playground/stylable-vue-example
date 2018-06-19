@@ -78,12 +78,12 @@
 
 /* CUSTOM STATE - SELECTED */
 
-.buttonsContainer:selected(layeredButton)::layeredButton::label::before,
-.buttonsContainer:selected(noteButton)::noteButton::label::before,
-.buttonsContainer:selected(gradientButton)::gradientButton::label::before,
-.buttonsContainer:selected(layeredButton)::layeredButton::label::after,
-.buttonsContainer:selected(noteButton)::noteButton::label::after,
-.buttonsContainer:selected(gradientButton)::gradientButton::label::after {
+.buttonsContainer::layeredButton:selected::label::before,
+.buttonsContainer::noteButton:selected::label::before,
+.buttonsContainer::gradientButton:selected::label::before,
+.buttonsContainer::layeredButton:selected::label::after,
+.buttonsContainer::noteButton:selected::label::after,
+.buttonsContainer::gradientButton:selected::label::after {
     content: "😎";
     font-size: 1.5rem;
 }
@@ -96,7 +96,6 @@
     border-radius: 100px;
     transition: all 150ms ease-in;
 }
-
 
 .buttonsContainer::layeredButton:hover {
     box-shadow: .5rem .5rem .5rem value(blackish), -.5rem -.5rem value(redish);

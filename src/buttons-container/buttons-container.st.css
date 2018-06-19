@@ -4,7 +4,6 @@
 }
 
 .root {
-    -st-states: selected(enum(layeredButton, noteButton, gradientButton));
     font-size: large;
 }
 
@@ -13,13 +12,16 @@
 .buttonBox {}
 
 .layeredButton {
+    -st-states: selected;
     -st-extends: CustomizableButton;
 }
 
 .noteButton {
+    -st-states: selected;
     -st-extends: CustomizableButton;
 }
 
 .gradientButton {
+    -st-states: selected;
     -st-extends: CustomizableButton;
 }
