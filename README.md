@@ -1,7 +1,7 @@
 # Stylable + Vue Example
 
 A basic example of using [Stylable](https://stylable.io) and [Vue](https://vuejs.org/) together. 
-This project uses a simple manual webpack integration with `vue-template-compiler`, `stylable-webpack-plugin`. It then uses `webpack-dev-server` to run the example.
+This project uses a simple manual webpack integration with `vue-template-compiler`, `@stylable/webpack-plugin`. It then uses `webpack-dev-server` to run the example.
 
 You can see the example running in production mode [here](https://wix-playground.github.io/stylable-vue-example/).
 
@@ -30,4 +30,4 @@ If you're using [VS Code](https://code.visualstudio.com/) as your IDE, we strong
 It provides a typed CSS experience including auto completions, hinting, diagnostics and more.
 
 ## Contributing
-This has been one of my first (and admittedly lovely) interactions with Vue. We will gladly accept PRs that will bring this project in-line with the community standards for a Vue project. -Tom.
+This has been one of my first (and admittedly lovely) interactions with Vue. We will gladly accept PRs that will bring this project in-line with the community standards for a Vue project. -Tom
