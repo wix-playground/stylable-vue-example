@@ -1,4 +1,4 @@
-const StylableWebpackPlugin = require('@stylable/webpack-plugin')
+const { StylableWebpackPlugin } = require('@stylable/webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -21,5 +21,5 @@ exports.module = {
 exports.plugins = [
     new StylableWebpackPlugin(),
     new VueLoaderPlugin(),
-    new HtmlWebpackPlugin
+    new HtmlWebpackPlugin()
 ]

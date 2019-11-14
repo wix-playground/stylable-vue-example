@@ -1,25 +1,22 @@
 <template>
-    <div :class="style.root" >
-        <p :class="style.description">
+    <div :class="classes.root" >
+        <p :class="classes.description">
             Three styled buttons, using the same base component.
             Click any of them to cause a change of state.
         </p>
 
-        <div :class="style.buttonBox">
+        <div :class="classes.buttonBox">
             <CustomizableButton 
-                v-bind="style.$cssStates({ selected: selected === 'layeredButton' })"
                 @click.native="$emit('select-button', 'layeredButton')"
-                :class="style.layeredButton"
+                :class="st(classes.layeredButton, { selected: selected === 'layeredButton' })"
                 label="WE" />
             <CustomizableButton
-                v-bind="style.$cssStates({ selected: selected === 'noteButton' })"
                 @click.native="$emit('select-button', 'noteButton')"
-                :class="style.noteButton"
+                :class="st(classes.noteButton, { selected: selected === 'noteButton' })"
                 label="ARE" />
             <CustomizableButton
-                v-bind="style.$cssStates({ selected: selected === 'gradientButton' })"
                 @click.native="$emit('select-button', 'gradientButton')"
-                :class="style.gradientButton"
+                :class="st(classes.gradientButton, { selected: selected === 'gradientButton' })"
                 label="BUTTONS" />
         </div>
     </div>
@@ -28,12 +25,12 @@
 <script>
 import Vue from 'vue'; 
 import CustomizableButton from '../customizable-button/customizable-button.vue';
-import style from './buttons-container.st.css';
+import { st, classes } from './buttons-container.st.css';
 
 export default {
     name: "buttons-container",
     components: { CustomizableButton },
-    data: () => { return { style }; },
+    data: () => { return { st, classes }; },
     props: {
         selected: String
     }

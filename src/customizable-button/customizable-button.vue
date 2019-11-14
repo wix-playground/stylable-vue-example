@@ -1,6 +1,6 @@
 <template>
-    <button :class="style.root" > 
-        <span :class="style.label" >
+    <button :class="classes.root" > 
+        <span :class="classes.label" >
             {{ label }}
         </span>
     </button>
@@ -8,13 +8,13 @@
 
 <script>
 import Vue from 'vue'; 
-import style from './customizable-button.st.css';
+import { classes } from './customizable-button.st.css';
 
 export default {
     name: "customizable-button",
     props: {
         label: String
     },
-    data: () => { return { style }; }
+    data: () => { return { classes }; }
 };
 </script>
