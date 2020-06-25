@@ -18,7 +18,7 @@
     "@stylable/webpack-plugin": "^3.4.6",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.3.0",
     "vue-loader": "^15.9.2",
     "vue-template-compiler": "^2.6.11",
