@@ -15,7 +15,7 @@
     "@stylable/runtime": "^3.11.10"
   },
   "devDependencies": {
-    "@stylable/core": "^3.11.10",
+    "@stylable/core": "^3.11.13",
     "@stylable/webpack-plugin": "^3.11.10",
     "css-loader": "^5.0.1",
     "file-loader": "^6.2.0",
