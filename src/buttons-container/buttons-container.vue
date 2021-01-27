@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import Vue from 'vue'; 
 import CustomizableButton from '../customizable-button/customizable-button.vue';
 import { st, classes } from './buttons-container.st.css';
 
