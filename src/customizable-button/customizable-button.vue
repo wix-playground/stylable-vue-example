@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import Vue from 'vue'; 
 import { classes } from './customizable-button.st.css';
 
 export default {
