@@ -18,7 +18,7 @@
     "@stylable/core": "^3.11.14",
     "@stylable/webpack-plugin": "^3.11.14",
     "@vue/compiler-sfc": "^3.0.5",
-    "css-loader": "^5.0.1",
+    "css-loader": "^5.0.2",
     "file-loader": "^6.2.0",
     "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^4.5.1",
