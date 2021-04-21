@@ -12,10 +12,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: "file-loader",
-        options: {
-          name: "static/media/[name].[hash:8].[ext]",
-        },
+        type: 'asset'
       },
     ],
   },
