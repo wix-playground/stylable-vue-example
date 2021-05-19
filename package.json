@@ -5,18 +5,18 @@
   "license": "BSD-3-Clause",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=production",
-    "start": "webpack serve --mode=development --open",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d ./dist"
   },
   "dependencies": {
-    "@stylable/runtime": "^4.2.3",
+    "@stylable/runtime": "^4.2.4",
     "vue": "^3.0.11"
   },
   "devDependencies": {
-    "@stylable/core": "^4.2.3",
-    "@stylable/webpack-plugin": "^4.2.3",
+    "@stylable/core": "^4.2.4",
+    "@stylable/webpack-plugin": "^4.2.4",
     "@vue/compiler-sfc": "^3.0.11",
     "css-loader": "^5.2.4",
     "gh-pages": "^3.1.0",
