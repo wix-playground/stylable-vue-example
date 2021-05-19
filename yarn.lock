@@ -33,10 +33,10 @@
     "@stylable/core" "^4.2.2"
     find-config "^1.0.0"
 
-"@stylable/core@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@stylable/core/-/core-4.2.2.tgz#b22ef5becdaab008e6068ace7a98d7977ed27dc8"
-  integrity sha512-JKkJLGuZhCOoEdMQRphxgB0ahFlPCGg5a+FT9G+2J2YFAb427nks7gRwOXWGy7RdT+kbmx1cIdbkzCotJ9pZCw==
+"@stylable/core@^4.2.2", "@stylable/core@^4.2.3":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/@stylable/core/-/core-4.2.3.tgz#96cd5ae96f6dc818cf0b6c797708fc02513eb9a0"
+  integrity sha512-BzRf+k4XCgR2Xkw4pyET3SP+hoBv3J42JEGnJPXCX3J8P3KXrg+pTfZan+qhsD+ouzDNMd7HMHhD8svHfc4l3A==
   dependencies:
     css-selector-tokenizer "^0.7.3"
     deindent "^0.1.0"
