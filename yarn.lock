@@ -2898,10 +2898,10 @@ vlq@^1.0.1:
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-1.0.1.tgz#c003f6e7c0b4c1edd623fd6ee50bbc0d6a1de468"
   integrity sha512-gQpnTgkubC6hQgdIcRdYGDSDc+SaujOdyesZQMv6JlfQee/9Mp0Qhnys6WxDWvQnL5WZdT7o2Ul187aSt0Rq+w==
 
-vue-loader@^16.7.0:
-  version "16.7.0"
-  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.7.0.tgz#ee161b2f6c27b0b459264c3c23d34068b471d574"
-  integrity sha512-43I0grWtwSCE8fiH/hAwFK+6sNlmvDuHhXScYH8HVSVAMS81IM66tgUOcxbPCeqhhz/1BE51YPxX59eZKGallQ==
+vue-loader@^16.7.1:
+  version "16.7.1"
+  resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.7.1.tgz#b6077565fe63024967997f54642938d697b367b5"
+  integrity sha512-6dOj/8DQ3lcfLwsFT9X5N1qvaMSqi8zsYTD0hE4iNp7G/mgZ39cgzvwCP3rxDwQD2adl65UmoRxnqBTHrK4u6A==
   dependencies:
     chalk "^4.1.0"
     hash-sum "^2.0.0"
