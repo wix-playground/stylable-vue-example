@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d ./dist"
   },
   "dependencies": {
-    "@stylable/runtime": "^4.7.4",
+    "@stylable/runtime": "^4.8.0",
     "vue": "^3.2.21"
   },
   "devDependencies": {
