@@ -16,7 +16,7 @@
     "vue": "^3.2.23"
   },
   "devDependencies": {
-    "@stylable/core": "^4.9.5",
+    "@stylable/core": "^4.10.0",
     "@stylable/webpack-plugin": "^4.9.5",
     "@vue/compiler-sfc": "^3.2.26",
     "css-loader": "^6.5.1",
