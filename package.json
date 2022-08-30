@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@stylable/runtime": "^5.2.0",
-    "vue": "^3.2.37"
+    "vue": "^3.2.38"
   },
   "devDependencies": {
     "@stylable/core": "^5.2.0",
