@@ -4,25 +4,13 @@
     font-family: sans-serif;
 }
 
-:import {
-    -st-from: "./top/top.st.css";
-    -st-default: Top;
-}
+@st-import Top from "./top/top.st.css";
 
-:import {
-    -st-from: "./buttons-container/buttons-container.st.css";
-    -st-default: ButtonsContainer;
-}
+@st-import ButtonsContainer from "./buttons-container/buttons-container.st.css";
 
-:import {
-    -st-from: "./customizable-button/customizable-button.st.css";
-    -st-default: CustomizableButton;
-}
+@st-import CustomizableButton from "./customizable-button/customizable-button.st.css";
 
-:import {
-    -st-from: "./utils.st.css";
-    -st-named: lightFont, buttonLayout;
-}
+@st-import [lightFont, buttonLayout] from "./utils.st.css";
 
 :vars {
     blackish: rgba(0, 0, 0, 0.5);
@@ -156,9 +144,11 @@
     0% {
         background-position: 0% 50%
     }
+
     50% {
         background-position: 100% 50%
     }
+
     100% {
         background-position: 0% 50%
     }

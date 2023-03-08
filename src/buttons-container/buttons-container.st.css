@@ -1,7 +1,4 @@
-:import {
-    -st-from: "../customizable-button/customizable-button.st.css";
-    -st-default: CustomizableButton;
-}
+@st-import CustomizableButton from "../customizable-button/customizable-button.st.css";
 
 .root {
     font-size: large;
