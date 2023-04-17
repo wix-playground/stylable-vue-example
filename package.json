@@ -21,7 +21,7 @@
     "@vue/compiler-sfc": "^3.2.47",
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
-    "html-webpack-plugin": "^5.5.0",
+    "html-webpack-plugin": "^5.5.1",
     "vue-loader": "^17.0.1",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1",
