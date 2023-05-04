@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@stylable/core": "^5.10.0",
-    "@stylable/webpack-plugin": "^5.10.0",
+    "@stylable/webpack-plugin": "^5.11.0",
     "@vue/compiler-sfc": "^3.2.47",
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
