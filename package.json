@@ -13,17 +13,17 @@
   },
   "dependencies": {
     "@stylable/runtime": "^5.11.0",
-    "vue": "^3.2.47"
+    "vue": "^3.3.2"
   },
   "devDependencies": {
     "@stylable/core": "^5.11.0",
     "@stylable/webpack-plugin": "^5.11.0",
-    "@vue/compiler-sfc": "^3.2.47",
+    "@vue/compiler-sfc": "^3.3.2",
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
-    "vue-loader": "^17.1.0",
-    "webpack": "^5.82.0",
+    "vue-loader": "^17.1.1",
+    "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   }
