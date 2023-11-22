@@ -12,15 +12,15 @@
     "deploy": "gh-pages -d ./dist"
   },
   "dependencies": {
-    "@stylable/runtime": "^5.16.0",
+    "@stylable/runtime": "^5.16.1",
     "vue": "^3.3.8"
   },
   "devDependencies": {
-    "@stylable/core": "^5.16.0",
-    "@stylable/webpack-plugin": "^5.16.0",
+    "@stylable/core": "^5.16.1",
+    "@stylable/webpack-plugin": "^5.16.1",
     "@vue/compiler-sfc": "^3.3.8",
     "css-loader": "^6.8.1",
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.0",
     "html-webpack-plugin": "^5.5.3",
     "vue-loader": "^17.3.1",
     "webpack": "^5.89.0",
